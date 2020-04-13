@@ -16,6 +16,24 @@ import io.reactivex.observables.GroupedObservable;
 
 /**
  * Rxjava数据转换操作
+ * 变换操作
+ * 这些操作符可用于对Observable发射的数据进行变换，详细解释可以看每个操作符的文档
+ * Buffer — 缓存，可以简单的理解为缓存，它定期从Observable收集数据到一个集合，
+ * 然后把这些数据集合打包发射，而不是一次发射一个
+ * FlatMap — 扁平映射，将Observable发射的数据变换为Observables集合，然后将这些
+ * Observable发射的数据平坦化的放进一个单独的Observable，可以认为是一个将嵌套的
+ * 数据结构展开的过程。
+ * GroupBy — 分组，将原来的Observable分拆为Observable集合，将原始Observable发射
+ * 的数据按Key分组，每一个Observable发射一组不同的数据
+ * Operators
+ * 30
+ * Map — 映射，通过对序列的每一项都应用一个函数变换Observable发射的数据，实质是
+ * 对序列中的每一项执行一个函数，函数的参数就是这个数据项
+ * Scan — 扫描，对Observable发射的每一项数据应用一个函数，然后按顺序依次发射这
+ * 些值
+ * Window — 窗口，定期将来自Observable的数据分拆成一些Observable窗口，然后发射
+ * 这些窗口，而不是每次发射一项。类似于Buffer，但Buffer发射的是数据，Window发射的
+ * 是Observable，每一个Observable发射原始Observable的数据的一个子集
  */
 public class RxTransformActivity extends AppCompatActivity {
 

@@ -5,6 +5,12 @@ import android.os.Bundle;
 
 import com.example.administrator.mytrain.R;
 
+import java.util.concurrent.TimeUnit;
+
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
 /**
  * 这个页面列出了很多用于Observable的辅助操作符
  * materialize( ) — 将Observable转换成一个通知列表convert an Observable into a list
@@ -40,6 +46,74 @@ public class RxAssistActivity extends AppCompatActivity {
     }
 
     private void  delay(){
+        Observable.just("1","2","3","4","5")
+                .delay(500, TimeUnit.MILLISECONDS)
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
 
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+    }
+
+
+    private void rxDo(){
+        Observable.just("9","6","7")
+                .doOnEach(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                }).subscribe(new Observer<String>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(String s) {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
     }
 }

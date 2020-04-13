@@ -34,7 +34,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".RxJavaText.RxAssistActivity"></activity>
+        <activity android:name=".RxJavaText.RxConditionalOperationActivity"></activity>
+        <activity android:name=".RxJavaText.RxAssistActivity" />
         <activity android:name=".RxJavaText.RxonErrorActivity" />
         <activity android:name=".RxJavaText.RxGroupActivity" />
         <activity android:name=".RxJavaText.RxFiltrationActivity" />

@@ -16,6 +16,20 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 
+/**
+ * 创建操作
+ * 用于创建Observable的操作符
+ * 	Create		—	通过调用观察者的方法从头创建一个Observable
+ * 	Defer		—	在观察者订阅之前不创建这个Observable，为每一个观察者创建一个新的 Observable
+ * 	Empty/Never/Throw		—	创建行为受限的特殊Observable
+ * 	From		—	将其它的对象或数据结构转换为Observable
+ * 	Interval		—	创建一个定时发射整数序列的Observable
+ * 	Just		—	将对象或者对象集合转换为一个会发射这些对象的Observable
+ * 	Range		—	创建发射指定范围的整数序列的Observable
+ * 	Repeat		—	创建重复发射特定的数据或数据序列的Observable
+ * 	Start		—	创建发射一个函数的返回值的Observable
+ * 	Timer		—	创建在一个指定的延迟之后发射单个数据的Observable
+ */
 public class RXCreaterActivity extends AppCompatActivity {
 
     @Override
