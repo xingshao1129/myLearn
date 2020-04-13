@@ -4,7 +4,7 @@ ADDED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\8872ecfd151fcbeaa1a733b14d31872b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\9cb37215d7b7da617c4ee50a44a1fcd6\AndroidManifest.xml:17:1-24:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
@@ -24,8 +24,8 @@ INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:2:1-109:12
 		INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml
 application
 ADDED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:7:5-91:19
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\8872ecfd151fcbeaa1a733b14d31872b\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\8872ecfd151fcbeaa1a733b14d31872b\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\9cb37215d7b7da617c4ee50a44a1fcd6\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\9cb37215d7b7da617c4ee50a44a1fcd6\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:10:9-31
 	android:icon
@@ -166,8 +166,8 @@ uses-sdk
 ADDED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:93:5-43
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:93:5-43
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:93:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\8872ecfd151fcbeaa1a733b14d31872b\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\8872ecfd151fcbeaa1a733b14d31872b\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\9cb37215d7b7da617c4ee50a44a1fcd6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\90589\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\9cb37215d7b7da617c4ee50a44a1fcd6\AndroidManifest.xml:20:5-43
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:93:5-43
 INJECTED from D:\MyTrain\speechDemo\src\main\AndroidManifest.xml:93:5-43
 	android:targetSdkVersion

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.mytrain.RxJavaText.RxjavaActivity;
+import com.example.administrator.mytrain.RxJavaText.ScanFileSubjectUtil;
 import com.example.administrator.mytrain.androidh5.AndroidH5Activity;
 import com.example.administrator.mytrain.bean.MulitTypeBean;
 import com.example.administrator.mytrain.bean.ObjectToJson;
@@ -25,6 +26,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import io.reactivex.functions.Consumer;
+import io.reactivex.subjects.Subject;
+
+import static java.lang.Thread.sleep;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -51,6 +57,51 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.self_view).setOnClickListener(this);
         findViewById(R.id.video_voice).setOnClickListener(this);
         setTitle("主页");
+        final Integer[] num = {0};
+        ScanFileSubjectUtil
+                .getMapDataSubject()
+                .subscribeOn(io.reactivex.schedulers.Schedulers.io())
+                .observeOn(io.reactivex.android.schedulers.AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<String>() {
+                    @Override
+                    public void accept(String s) throws Exception {
+//                        sleep(40);
+                        num[0]=num[0]+1;
+                        Log.i("--main====>",Thread.currentThread().getName()+"  num==>"+ num[0] +"  name==>"+s);
+                    }
+                });
+        final Subject<String> subject=ScanFileSubjectUtil.getMapDataSubject().toSerialized();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    for (int i=1;i<=2500;i++){
+//                        sleep(70);
+                        Log.i("-~-Thread1==>",Thread.currentThread().getName()+"  num==>"+i);
+                        subject.onNext("A"+i);
+                    }
+                }catch (Exception e) {
+
+                }
+
+
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    for (int i=1;i<=2500;i++){
+//                        sleep(50);
+                        Log.i("-~-Thread2==>",Thread.currentThread().getName()+"  num==>"+i);
+                        subject.onNext("B"+i);
+                    }
+                }catch (Exception e){
+
+                }
+
+            }
+        }).start();
     }
 
     @Override
